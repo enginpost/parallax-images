@@ -11,3 +11,5 @@ the image to return to the appropriate amount of parallax based on the page scro
 
 ##How it works
 
+###Requirements
+
