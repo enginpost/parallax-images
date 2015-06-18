@@ -10,6 +10,9 @@ In addition to the *parallaxing scroll* presentation, the plugin adds a mouse-ov
 causing the image to *expand to present it entirely*, while the mouse-out event causes
 the image to return to the appropriate amount of parallax based on the page scroll.
 
+You can see it in action here:
+http://htmlpreview.github.io/?https://github.com/enginpost/parallax-images/blob/master/example/index.html 
+
 ##How it works
 
 ###Requirements
