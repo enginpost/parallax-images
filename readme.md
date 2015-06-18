@@ -68,6 +68,9 @@ Parallax images takes care of this by providing an additional class *parallax-he
 ```HTML
 <img src="images/gopher.jpg" height="280" width="180" alt="a gopher" class="parallax-image parallax-hero" align="right">
 ```
+##Known issues
+
+* Currently firefox has issues with animating background image positions. I am in the process of rewriting the animation to overcome this.
 
 ##Future goals
 
