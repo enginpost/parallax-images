@@ -41,8 +41,8 @@ the image to return to the appropriate amount of parallax based on the page scro
 
 ##Additional options
 
-It is very common today for articles to contain featured images or for homepages to contain hero images (large images at the top of the article page, above the scroll. 
+It is very common today for articles to contain featured images or for homepages to contain hero images (large images at the top of the article page, above the scroll.) 
 
 Parallax images takes care of this by providing an additional class *parallax-hero* which sets the start of the parallax image scrolling equal to the top of the document. This means the hero image always aligns to the top of the image, and parallaxes down toward the bottom as the image scrolls away. 
 
-  
+* ````<img src="images/gopher.jpg" height="280" width="180" alt="a gopher" class="parallax-image parallax-hero" align="right">````
