@@ -13,3 +13,6 @@ the image to return to the appropriate amount of parallax based on the page scro
 
 ###Requirements
 
+* Your HTML doc needs a DocType declaration in order to measure the width and height of elements
+  * ````<!doctype html>````
+* 
