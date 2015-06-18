@@ -1,6 +1,8 @@
 #Parallax-images
 
 ##What it does
+![sample of parallax image](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "sample of parallax image")
+https://github.com/enginpost/parallax-images/blob/master/readme/readme-sample.png
 Parallax images is a **jQuery plugin** that allows you to implement traditional images
 in a webpage while calling a single function  to convert the images into a virtually cropped parallaxing
 presentation of images that slide vertically within themselves when the page scrolls.
