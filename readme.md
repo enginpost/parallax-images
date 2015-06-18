@@ -38,6 +38,7 @@ the image to return to the appropriate amount of parallax based on the page scro
     </script>
 ```
   * The ````$.parallaxify(100)```` syntax looks for all ````<img>```` tags with the *parallax-image* class and transforms them into ````<div>```` tags with background images. It converts the *alt* property into a *title* property on the ````<div>```` tag. In the above example it sets the *height* of the ````<div>```` tag equal to the *height* of the image, minus the value passed into the *parallaxify* method. Once the ````<div>```` tag is fully visible in the browser window viewport (it has been scrolled into view) as it scrolls from the bottom of the viewport to the top of the viewport, the *background-image* changes it's css *top* position to scroll the entire image vertically within the ````<div>```` tag creating the parallax effect. Parallaxifying those images also binds the mouse-over and mouse-out events to expand and contract the parallax view and reveal the entire background image all at once.
+  * You can update the value passed into the *parallaxify* method to set the pages **crop** value. For example, if your images are very tall (500 pixels) you might want to visually crop the image by 300 pixels for a drammatic parallaxing effect (again, the visitor can always hover the image to see the full version.) Remember that this setting affects all images on the page.
 
 ##Additional options
 
@@ -46,3 +47,11 @@ It is very common today for articles to contain featured images or for homepages
 Parallax images takes care of this by providing an additional class *parallax-hero* which sets the start of the parallax image scrolling equal to the top of the document. This means the hero image always aligns to the top of the image, and parallaxes down toward the bottom as the image scrolls away. 
 
 * ````<img src="images/gopher.jpg" height="280" width="180" alt="a gopher" class="parallax-image parallax-hero" align="right">````
+
+##Future goals
+
+Here are a few goals I have for future versions:
+
+* More cross-browser testing
+* The ability to set an independent parallaxing crop value for different images on a single page, in addition to a default parallaxing crop value.
+* Refactoring to improve performance in a gallery of images.
