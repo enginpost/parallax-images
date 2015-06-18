@@ -2,7 +2,7 @@
 
 ##What it does
 Parallax images is a **jQuery plugin** that allows you to implement traditional images
-in a webpage while calling a single function  to convert the images into a parallaxing
+in a webpage while calling a single function  to convert the images into a virtually cropped parallaxing
 presentation of images that slide vertically within themselves when the page scrolls.
 
 In addition to the *parallaxing scroll* presentation, the plugin adds a mouse-over event
