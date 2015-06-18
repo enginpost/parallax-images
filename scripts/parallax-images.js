@@ -28,7 +28,7 @@
       //keep a list of images that will be parallaxed in the parallaxImages array
       var divImg = $('#px'+index);
       var pImg;
-      if(divImg.hasClass('hero')){
+      if(divImg.hasClass('parallax-hero')){
         pImg = { 
           id: divImg.attr('id'), 
           start: 0, 
