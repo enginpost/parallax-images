@@ -37,7 +37,7 @@ the image to return to the appropriate amount of parallax based on the page scro
 <img src="images/gopher.jpg" height="280" width="180" alt="a gopher" class="parallax-image" align="right">
 ```
 
-    * Be sure to include:
+  * Be sure to include:
       * The *parallax-image* class
       * The *width* and *height* of the image
       * An *alt* property value for section-508 compliance
