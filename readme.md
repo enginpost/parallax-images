@@ -33,7 +33,9 @@ the image to return to the appropriate amount of parallax based on the page scro
 ###Markup
 
 * Parallax images transforms traditional HTML````<img>```` tags in your HTML document:
-  * ````<img src="images/gopher.jpg" height="280" width="180" alt="a gopher" class="parallax-image" align="right">````
+```HTML
+<img src="images/gopher.jpg" height="280" width="180" alt="a gopher" class="parallax-image" align="right">
+```
     * Be sure to include:
       * The *parallax-image* class
       * The *width* and *height* of the image
@@ -56,7 +58,9 @@ It is very common today for articles to contain featured images or for homepages
 
 Parallax images takes care of this by providing an additional class *parallax-hero* which sets the start of the parallax image scrolling equal to the top of the document. This means the hero image always aligns to the top of the image, and parallaxes down toward the bottom as the image scrolls away. 
 
-* ````<img src="images/gopher.jpg" height="280" width="180" alt="a gopher" class="parallax-image parallax-hero" align="right">````
+```HTML
+<img src="images/gopher.jpg" height="280" width="180" alt="a gopher" class="parallax-image parallax-hero" align="right">
+```
 
 ##Future goals
 
