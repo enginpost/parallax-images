@@ -25,7 +25,7 @@ the image to return to the appropriate amount of parallax based on the page scro
 * Parallax images transforms traditional HTML````<img>```` tags in your HTML document:
   * ````<img src="images/gopher.jpg" height="280" width="180" alt="a gopher" class="parallax-image" align="right">````
     * Be sure to include:
-      * The ````parallax-image```` class
+      * The *parallax-image* class
       * The *width* and *height* of the image
       * An *alt* property value for section-508 compliance
     * Note: *Parallax images does not style your image. If you want to round the corners or inset the image, create additional classes. Parallax images will respect the ````left, middle, right```` alignment of your ````<img>```` tag when it is transformed.
@@ -37,3 +37,12 @@ the image to return to the appropriate amount of parallax based on the page scro
       });
     </script>
 ```
+  * The ````$.parallaxify(100)```` syntax looks for all ````<img>```` tags with the *parallax-image* class and transforms them into ````<div>```` tags with background images. It converts the *alt* property into a *title* property on the ````<div>```` tag. In the above example it sets the *height* of the ````<div>```` tag equal to the *height* of the image, minus the value passed into the *parallaxify* method. Once the ````<div>```` tag is fully visible in the browser window viewport (it has been scrolled into view) as it scrolls from the bottom of the viewport to the top of the viewport, the *background-image* changes it's css *top* position to scroll the entire image vertically within the ````<div>```` tag creating the parallax effect. Parallaxifying those images also binds the mouse-over and mouse-out events to expand and contract the parallax view and reveal the entire background image all at once.
+
+##Additional options
+
+It is very common today for articles to contain featured images or for homepages to contain hero images (large images at the top of the article page, above the scroll. 
+
+Parallax images takes care of this by providing an additional class *parallax-hero* which sets the start of the parallax image scrolling equal to the top of the document. This means the hero image always aligns to the top of the image, and parallaxes down toward the bottom as the image scrolls away. 
+
+  
