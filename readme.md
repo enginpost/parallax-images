@@ -18,11 +18,17 @@ the image to return to the appropriate amount of parallax based on the page scro
 <!doctype html>
 ```
 * You need to include the Parallax images css file
-```HTML <link rel="stylesheet" href="styles/parallax-images.css"> ``` 
-* You need to include *jQuery* at the bottom of your HTML page, before the closing ```HTML </body> ``` tag
-```HTML <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> ``` 
+```HTML
+<link rel="stylesheet" href="styles/parallax-images.css">
+``` 
+* You need to include *jQuery* at the bottom of your HTML page, before the closing ````</body>```` tag
+```HTML 
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> 
+``` 
 * You need to include the *parallax-images* plugin at the bottom of your HTML page, before the closing ```HTML </body> ``` tag
-```HTML <script type="text/javascript" src="scripts/parallax-images.js"></script> ``` 
+```HTML 
+<script type="text/javascript" src="scripts/parallax-images.js"></script> 
+``` 
 
 ###Markup
 
