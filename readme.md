@@ -36,3 +36,4 @@ the image to return to the appropriate amount of parallax based on the page scro
         $.parallaxify(100);
       });
     </script>
+    ````
