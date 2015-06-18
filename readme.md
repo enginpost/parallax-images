@@ -23,7 +23,7 @@ the image to return to the appropriate amount of parallax based on the page scro
 ###Markup
 
 * Parallax images transforms traditional HTML````<img>```` tags in your HTML document:
-  * ````<img src="images/gopher.jpg" height="280" width="180" alt="a still gopher" class="parallax-image" align="right">````
+  * ````<img src="images/gopher.jpg" height="280" width="180" alt="a gopher" class="parallax-image" align="right">````
     * Be sure to include:
       * The ````parallax-image```` class
       * The *width* and *height* of the image
