@@ -11,7 +11,8 @@ causing the image to *expand to present it entirely*, while the mouse-out event 
 the image to return to the appropriate amount of parallax based on the page scroll.
 
 You can see it in action here:
-http://htmlpreview.github.io/?https://github.com/enginpost/parallax-images/blob/master/example/index.html 
+
+* http://htmlpreview.github.io/?https://github.com/enginpost/parallax-images/blob/master/example/index.html 
 
 ##How it works
 
