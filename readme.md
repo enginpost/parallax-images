@@ -13,6 +13,12 @@ the image to return to the appropriate amount of parallax based on the page scro
 
 ###Requirements
 
-* Your HTML doc needs a DocType declaration in order to measure the width and height of elements
+* Your HTML document needs a DocType declaration in order to measure the width and height of elements
   * ````<!doctype html>````
-* 
+* You need to include *jQuery* at the bottom of your HTML page, before the closing ````</body>```` tag
+  * ````<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>```` 
+* You need to include the *parallax-image* plugin at the bottom of your HTML page, before the closing ````</body>```` tag
+  * ````<script type="text/javascript" src="scripts/parallax-images.js"></script>```` 
+
+###Markup
+
