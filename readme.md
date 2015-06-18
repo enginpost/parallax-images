@@ -30,7 +30,7 @@ the image to return to the appropriate amount of parallax based on the page scro
       * An *alt* property value for section-508 compliance
     * Note: *Parallax images does not style your image. If you want to round the corners or inset the image, create additional classes. Parallax images will respect the ````left, middle, right```` alignment of your ````<img>```` tag when it is transformed.
 * Include a ````<script>```` block to initiate parallaxification of your ````<img>```` tags
-* ```javascript
+* ```JavaScript
     <script type="text/javascript">
       $(document).ready(function(){
         $.parallaxify(100);
