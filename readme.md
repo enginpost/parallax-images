@@ -10,6 +10,8 @@ In addition to the *parallaxing scroll* presentation, the plugin adds a mouse-ov
 causing the image to *expand to present it entirely*, while the mouse-out event causes
 the image to return to the appropriate amount of parallax based on the page scroll.
 
+The plugin works for Firefox, Chrome, and Internet Explorer.
+
 You can see it in action here:
 
 * http://htmlpreview.github.io/?https://github.com/enginpost/parallax-images/blob/master/example/index.html 
@@ -70,12 +72,11 @@ Parallax images takes care of this by providing an additional class *parallax-he
 ```
 ##Known issues
 
-* Currently firefox has issues with animating background image positions. I am in the process of rewriting the animation to overcome this.
+* There are no known issues.
 
 ##Future goals
 
 Here are a few goals I have for future versions:
 
-* More cross-browser testing
 * The ability to set an independent parallaxing crop value for different images on a single page, in addition to a default parallaxing crop value.
 * Refactoring to improve performance in a gallery of images.
