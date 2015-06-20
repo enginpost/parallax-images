@@ -61,16 +61,46 @@
         //    we are currently at.
         var percentageScroll = ($(window).scrollTop() - parallaxImages[i].start) / parallaxImages[i].distance;
         //scroll the background position vertically by a distance percentage times the parallaxImageAmount
-        var thisAnimation = {'background-position-y': parseInt(0-(parallaxImageAmount*percentageScroll))};
-
-        animateImage( parallaxImages[i], thisAnimation, 0 );
+        animateImage( parallaxImages[i], 
+          {
+            backgroundPositionX: '0px', 
+            backgroundPositionY: $(parallaxImages[i]).css('background-position').split(' ')[1]
+          },
+          { 
+            backgroundPositionX: 0, 
+            backgroundPositionY: parseInt(0-(parallaxImageAmount*percentageScroll))
+          },
+          0
+        );
       }
     }
   }
 
-  function animateImage( thisElement, thisAnimation, speed ){
-    // animate it
-    $('#' + thisElement.id).animate( thisAnimation, speed);
+  function animateImage( someElement, propertiesFrom, propertiesTo, duration ){
+    propertiesReferenceBackgroundPosition = false;
+    for( prop in propertiesFrom){
+      propertiesFrom[prop] = parseInt(propertiesFrom[prop]);
+      if( propertiesReferenceBackgroundPosition == false ){
+        propertiesReferenceBackgroundPosition = ( prop.indexOf('backgroundPosition') > -1 ) ? true : false;
+      }
+    }
+    $( propertiesFrom ).animate(
+      propertiesTo,
+      { 'duration': duration,
+        step: function( now, fx ){
+          propertiesFrom[fx.prop] = now;
+          if( propertiesReferenceBackgroundPosition ){
+            var tempProps = $.extend({}, propertiesFrom);
+            tempProps.backgroundPosition = tempProps.backgroundPositionX + 'px ' + tempProps.backgroundPositionY + 'px';
+            delete tempProps.backgroundPositionX;
+            delete tempProps.backgroundPositionY;
+            $(someElement).css(tempProps);
+          }else{
+            $(someElement).css(propertiesFrom);
+          }
+        }
+      }
+    );
   }
   function hoverParallaxImage(){
     for(var i = 0; i < parallaxImages.length; i++){
